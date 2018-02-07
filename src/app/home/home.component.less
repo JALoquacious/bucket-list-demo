@@ -1,40 +1,45 @@
-@blue_1:#57B3F1;
-@blue_2:#3FA0E1;
-@blue_3:#2885C4;
-@blue_4: #003A61;
-@green_lime:#A5F883;
+@blue_1: #57b3f1;
+@blue_2: #3fa0e1;
+@blue_3: #2885c4;
+@blue_4: #003a61;
+@green_lime: #a5f883;
 
-.container {
-	display: grid;
-	grid-template-columns: 50% auto;
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 50% auto;
+        grid-gap:20px;
+    }
+}
+main {
+    display: grid;
 }
 .col {
-	padding: .4em 1.3em;
+    padding: 0.4em 1.3em;
 }
 .color-dark {
-	background: @blue_3;
+    background: @blue_3;
 }
 .color-light {
-	background: @blue_1;
+    background: @blue_1;
 }
 input.txt {
-	border: 0;
-	padding: 1em;
-	width: 80%;
-	margin-bottom: 2em;
+    border: 0;
+    padding: 1em;
+    width: 80%;
+    margin-bottom: 2em;
 }
 input.btn {
-	border: 0;
-	display: block;
-	padding: 1em 3em;
-	background: @green_lime;
-	color: @blue_4;
-	margin-bottom: 1em;
-	cursor: pointer;
+    border: 0;
+    display: block;
+    padding: 1em 3em;
+    background: @green_lime;
+    color: @blue_4;
+    margin-bottom: 1em;
+    cursor: pointer;
 }
 .life-container {
-	background: @blue_2;
-	padding: .5em;
-	font-weight: bold;
-	cursor: pointer;
+    background: @blue_2;
+    padding: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
 }
