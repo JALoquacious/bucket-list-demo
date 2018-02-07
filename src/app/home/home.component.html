@@ -26,9 +26,9 @@
                 <p>Your bucket list ({{ itemCount }})</p>
             </div>
         </div>
-        <div class="color-light">
+        <div class="color-light" [@goals]="goals.length">
             <div class="col">
-                <p class="life-container" *ngFor="let goal of goals">
+                <p class="life-container" *ngFor="let goal of goals; let i = index" (click)="removeItem(i)">
                     {{ goal }}
                 </p>
             </div>
