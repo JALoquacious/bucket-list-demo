@@ -4,7 +4,7 @@ import { BehaviorSubject } from "rxjs/BehaviorSubject";
 @Injectable()
 export class DataService {
     
-    private goals = new BehaviorSubject<any>(['The initial goal', 'Another silly life goal']);
+    private goals = new BehaviorSubject<any>(['The initial goal', 'Another silly life goal', 'Swim with sea turtles']);
     goal = this.goals.asObservable();
 
     constructor() {}
